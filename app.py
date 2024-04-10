@@ -20,6 +20,13 @@ def get_textblocks():
     # Additional code to process the PDF and extract text blocks...
     return jsonify({"message": "Text blocks extracted"})
 
+@app.route('/get-pdf', methods=['POST'])
+def get_pdf():
+    if 'pdf' not in request.files:
+        return jsonify({"error": "No pdf file part"}), 400
+    # Additional code to process the PDF, highlight layouts, and return a new PDF...
+    return send_file('path/to/new_pdf', as_attachment=True)
+
 
 if __name__ == '__main__':
     app.run(port=8000, debug=True)
