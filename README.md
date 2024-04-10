@@ -17,3 +17,24 @@ Before setting up the project, ensure you have the following installed:
 - Pip (Python package manager)
 - [Poppler-utils](https://poppler.freedesktop.org/) for PDF to image conversion
 - [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) for Optical Character Recognition
+
+### Setup
+
+Clone the repository to your local machine:
+
+```bash
+git clone <repository-url>
+cd path-to-repository
+```
+
+Install the required Python dependencies:
+```
+pip install -r requirements.txt
+```
+
+### Usage
+
+To start the Flask server:
+```
+python app.py
+```
