@@ -27,6 +27,12 @@ def get_pdf():
     # Additional code to process the PDF, highlight layouts, and return a new PDF...
     return send_file('path/to/new_pdf', as_attachment=True)
 
+def convert_to_pdf(image_objects):
+    pdf_bytes_io = io.BytesIO()
+    image_objects[0].save(pdf_bytes_io, format='PDF', save_all=True, append_images=image_objects[1:])
+    pdf_bytes_io.seek(0)
+    return pdf_bytes_io
+
 
 if __name__ == '__main__':
     app.run(port=8000, debug=True)
