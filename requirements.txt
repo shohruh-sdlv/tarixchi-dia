@@ -6,3 +6,4 @@ layoutparser
 torch
 torchvision
 pytesseract
+Gunicorn
