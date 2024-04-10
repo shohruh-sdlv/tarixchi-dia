@@ -1,3 +1,7 @@
+!pip install "detectron2@git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2"
+!pip install "layoutparser[ocr]"
+!pip install -U 'git+https://github.com/nikhilweee/iopath'
+
 # Import necessary libraries
 import numpy as np
 import layoutparser as lp
