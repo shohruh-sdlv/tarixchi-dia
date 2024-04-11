@@ -1,3 +1,5 @@
+# !pip install "detectron2@git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2"
+
 # Import necessary libraries
 import numpy as np
 import layoutparser as lp
