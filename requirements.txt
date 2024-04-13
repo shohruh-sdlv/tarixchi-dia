@@ -1,6 +1,5 @@
 Flask
 numpy
-Pillow==9.0.0
 PyMuPDF
 layoutparser
 torch
@@ -9,3 +8,4 @@ pytesseract
 Gunicorn
 layoutparser[ocr]
 wheel
+Pillow==9.0.0
